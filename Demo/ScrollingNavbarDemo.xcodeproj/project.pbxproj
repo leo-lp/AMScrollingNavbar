@@ -16,6 +16,7 @@
 		652BE2DB1B62805C00DE75C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652BE2DA1B62805C00DE75C7 /* Images.xcassets */; };
 		652BE2DE1B62805C00DE75C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652BE2DC1B62805C00DE75C7 /* LaunchScreen.xib */; };
 		652BE2EA1B62805D00DE75C7 /* ScrollingNavbarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652BE2E91B62805D00DE75C7 /* ScrollingNavbarDemoTests.swift */; };
+		658AE0C71FAC7C2500A9B188 /* LargeTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AE0C61FAC7C2500A9B188 /* LargeTitleViewController.swift */; };
 		658FA1721B836D9C00EB32A4 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA1711B836D9C00EB32A4 /* ScrollViewController.swift */; };
 		658FA1781B837C6100EB32A4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA1771B837C6100EB32A4 /* TableViewController.swift */; };
 		658FA17A1B8386EB00EB32A4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA1791B8386EB00EB32A4 /* WebViewController.swift */; };
@@ -48,6 +49,7 @@
 		652BE2E31B62805D00DE75C7 /* ScrollingNavbarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollingNavbarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		652BE2E81B62805D00DE75C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652BE2E91B62805D00DE75C7 /* ScrollingNavbarDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingNavbarDemoTests.swift; sourceTree = "<group>"; };
+		658AE0C61FAC7C2500A9B188 /* LargeTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleViewController.swift; sourceTree = "<group>"; };
 		658FA1711B836D9C00EB32A4 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		658FA1771B837C6100EB32A4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		658FA1791B8386EB00EB32A4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +87,9 @@
 				FA66D4CC6DCE1684FB61866F /* Pods */,
 				B1539338F9A059FBFFC260EC /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		652BE2CF1B62805C00DE75C7 /* Products */ = {
 			isa = PBXGroup;
@@ -140,6 +144,7 @@
 				658FA1771B837C6100EB32A4 /* TableViewController.swift */,
 				658FA1791B8386EB00EB32A4 /* WebViewController.swift */,
 				652AA8421C80468A00FDC96F /* CollectionViewController.swift */,
+				658AE0C61FAC7C2500A9B188 /* LargeTitleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -226,18 +231,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Fancy Pixel";
 				TargetAttributes = {
 					652BE2CD1B62805C00DE75C7 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = H72GR44F4M;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 					652BE2E21B62805D00DE75C7 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						TestTargetID = 652BE2CD1B62805C00DE75C7;
 					};
 				};
@@ -384,6 +389,7 @@
 				652AA8411C80460400FDC96F /* CollectionViewCell.swift in Sources */,
 				652BE2D41B62805C00DE75C7 /* AppDelegate.swift in Sources */,
 				652AA8431C80468A00FDC96F /* CollectionViewController.swift in Sources */,
+				658AE0C71FAC7C2500A9B188 /* LargeTitleViewController.swift in Sources */,
 				658FA17A1B8386EB00EB32A4 /* WebViewController.swift in Sources */,
 				658FA1781B837C6100EB32A4 /* TableViewController.swift in Sources */,
 			);
@@ -435,14 +441,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -471,6 +485,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -482,14 +497,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -509,6 +532,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -521,13 +545,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H72GR44F4M;
 				INFOPLIST_FILE = ScrollingNavbarDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "01dc3e20-08cf-47c5-b70a-8d645fc53db0";
 				PROVISIONING_PROFILE_SPECIFIER = Development;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -540,14 +565,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H72GR44F4M;
 				INFOPLIST_FILE = ScrollingNavbarDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "01dc3e20-08cf-47c5-b70a-8d645fc53db0";
 				PROVISIONING_PROFILE_SPECIFIER = Development;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -567,7 +593,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollingNavbarDemo.app/ScrollingNavbarDemo";
 			};
 			name = Debug;
@@ -584,7 +611,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollingNavbarDemo.app/ScrollingNavbarDemo";
 			};
 			name = Release;
